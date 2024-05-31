@@ -1,0 +1,51 @@
+@import "header.css";
+
+main {
+    padding: 20px;
+}
+
+.problem-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.problem-list h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.problem {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.problem h2 {
+    margin: 0;
+}
+
+.problem h2 a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.problem h2 a:hover {
+    text-decoration: underline;
+}
+
+.problem p {
+    margin: 10px 0 0;
+    color: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

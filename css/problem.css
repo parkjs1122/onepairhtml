@@ -1,0 +1,77 @@
+@import "header.css";
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.problem-detail, .editor-section {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+.problem-detail h1, .editor-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.problem-detail h2, .editor-section label {
+    margin-top: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.problem-detail p, .problem-detail pre, .editor-section p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.submission-form {
+    margin-top: 30px;
+}
+
+.submission-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.submission-form select, .submission-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.submission-form .btn {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.submission-form .btn:hover {
+    background: #0056b3;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
