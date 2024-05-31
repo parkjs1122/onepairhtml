@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결과 확인</title>
+    <link rel="stylesheet" href="./css/result.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">코딩 테스트</div>
+            <ul class="nav-links">
+                <li><a href="main.html">홈</a></li>
+                <li><a href="list.html">문제 목록</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="join.html">회원 가입</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="result-section">
+            <h1>결과 확인</h1>
+            <div class="result-summary">
+                <h2>문제 1: 두 수의 합</h2>
+                <p><strong>제출 상태:</strong> 성공</p>
+                <p><strong>실행 시간:</strong> 0.123 초</p>
+                <p><strong>메모리 사용량:</strong> 15 MB</p>
+            </div>
+            <div class="test-cases">
+                <h2>테스트 케이스 결과</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>케이스</th>
+                            <th>입력</th>
+                            <th>기대 출력</th>
+                            <th>실제 출력</th>
+                            <th>결과</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>3, 4</td>
+                            <td>7</td>
+                            <td>7</td>
+                            <td class="pass">성공</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>-1, 5</td>
+                            <td>4</td>
+                            <td>4</td>
+                            <td class="pass">성공</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>0, 0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td class="pass">성공</td>
+                        </tr>
+                        <!-- 추가 테스트 케이스 -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="actions">
+                <button class="btn" onclick="window.location.href='/problem-list'">다른 문제 풀기</button>
+                <button class="btn" onclick="window.location.href='/submit-again'">다시 제출하기</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 코딩 테스트 사이트. All rights reserved.</p>
+    </footer>
+</body>
+</html>

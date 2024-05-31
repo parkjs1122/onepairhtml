@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코드 편집 및 제출</title>
+    <link rel="stylesheet" href="./css/problem.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">코딩 테스트</div>
+            <ul class="nav-links">
+                <li><a href="main.html">홈</a></li>
+                <li><a href="list.html">문제 목록</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="join.html">회원 가입</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="problem-detail">
+            <h1>문제 1: 두 수의 합</h1>
+            <div class="problem-description">
+                <h2>문제 설명</h2>
+                <p>두 정수 a와 b가 주어졌을 때, 이 두 수의 합을 반환하는 함수를 작성하세요.</p>
+            </div>
+            <div class="problem-input">
+                <h2>입력</h2>
+                <p>첫 번째 줄에 정수 a가 주어집니다.</p>
+                <p>두 번째 줄에 정수 b가 주어집니다.</p>
+            </div>
+            <div class="problem-output">
+                <h2>출력</h2>
+                <p>a와 b의 합을 출력합니다.</p>
+            </div>
+            <div class="example">
+                <h2>예제</h2>
+                <p><strong>입력:</strong></p>
+                <pre>3
+4</pre>
+                <p><strong>출력:</strong></p>
+                <pre>7</pre>
+            </div>
+        </section>
+        <section class="editor-section">
+            <h2>코드 편집</h2>
+            <form class="submission-form" action="result.html" method="post">
+                <label for="language">언어 선택</label>
+                <select id="language" name="language">
+                    <option value="python">Python</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="java">Java</option>
+                    <option value="cpp">C++</option>
+                    <!-- 추가 언어들 -->
+                </select>
+                
+                <label for="code">코드 작성</label>
+                <textarea id="code" name="code" rows="15" required></textarea>
+                
+                <button type="submit" class="btn">제출</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 코딩 테스트 사이트. All rights reserved.</p>
+    </footer>
+</body>
+</html>

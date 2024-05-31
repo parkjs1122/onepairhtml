@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 가입</title>
+    <link rel="stylesheet" href="./css/join.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">코딩 테스트</div>
+            <ul class="nav-links">
+                <li><a href="main.html">홈</a></li>
+                <li><a href="list.html">문제 목록</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="join.html">회원 가입</a></li>
+            </ul>
+        </nav>
+    </header>
+    <link rel="import" href="header.html">
+    <main>
+        <section class="signup-form">
+            <h1>회원 가입</h1>
+            <form action="/signup" method="post">
+                <label for="username">사용자 이름</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="email">이메일</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="confirm-password">비밀번호 확인</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                
+                <button type="submit" class="btn">회원 가입</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 코딩 테스트 사이트. All rights reserved.</p>
+    </footer>
+</body>
+</html>

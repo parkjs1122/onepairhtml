@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Code Editor</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  .editor-container {
+    display: flex;
+    height: 100vh;
+  }
+  .code-editor {
+    flex: 1;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+  }
+  .code-editor textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+    font-family: monospace;
+    font-size: 14px;
+  }
+  .output {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+  }
+</style>
+</head>
+<body>
+
+<div class="editor-container">
+  <div class="code-editor">
+    <textarea id="code" placeholder="Write your code here..."></textarea>
+  </div>
+  <div class="output" id="output">
+    Output will appear here.
+  </div>
+</div>
+
+<script>
+  const codeTextarea = document.getElementById('code');
+  const outputDiv = document.getElementById('output');
+
+  // Run code function
+  const runCode = () => {
+    const code = codeTextarea.value;
+    try {
+      const result = eval(code);
+      outputDiv.textContent = result;
+    } catch (error) {
+      outputDiv.textContent = error;
+    }
+  };
+
+  // Run code when typing stops (debouncing)
+  let typingTimer;
+  const doneTypingInterval = 1000;
+  codeTextarea.addEventListener('keyup', () => {
+    clearTimeout(typingTimer);
+    typingTimer = setTimeout(runCode, doneTypingInterval);
+  });
+
+  // Initial run
+  runCode();
+</script>
+
+</body>
+</html>
